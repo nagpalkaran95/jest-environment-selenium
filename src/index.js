@@ -69,7 +69,7 @@ async function buildDriver(configuration) {
       driver.setProxy(prxy);
     }
 
-    drivers.push(driver);
+    drivers.push(driver.build());
     // return driver.build();
   });
   return drivers;
